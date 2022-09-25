@@ -23,4 +23,15 @@ class Paint {
 	  return color;
 	 }
  }
-	
+	     
+		   //ECommerce--
+		   //Furniture--name, price,color
+		   //Toys  -- name,color,price
+		   //Paint --id,name,price,color
+		   //TeaStall --id,name,price
+		   //Mannu 
+		   //RailwayStation --name , address
+		   //Galaxy
+		   //Pg   id,name,price
+		   //Vessel
+		   
