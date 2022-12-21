@@ -8,37 +8,37 @@ public class Watch {
   
 	public static void main(String args[]) {
 		
-		String watch1 = "Sonata";
-		String watch2 = "Titan";
-		String watch3 = "Apple";
-		String watch4 = "HMT";
-		String watch5 = "Smart";
-		
-		Collection<String> collection = new ArrayList<String>();
-		
-		collection.add(watch5);
-		collection.add(watch4);
-		collection.add(watch2);
-		collection.add(watch3);
-		collection.add(null);
-		collection.add(watch1);
-		
-		System.out.println(collection.size());
-		System.out.println(collection);
-		System.out.println("Accessing all the element from collection...");
-		
-		//for each
-		
-		for(String element:collection) {
-			System.out.println(element);
-		}
-		System.out.println("......Iterator......");
-		
-	    Iterator<String> itr = collection.iterator();
-	    while(itr.hasNext())
-		{
-			String element = itr.next();
-			System.out.println(element);
-		}
-	}
+
+		Collection<String> watches = new ArrayList();	
+			
+	    watches.add("Rolex");
+	    watches.add("Titan");
+	    watches.add("Fast track");
+	    watches.add("Richard Mille");
+	    watches.add("Rado");
+	    
+	    System.out.println(watches);
+	    
+	 
+	    
+	    System.out.println(System.lineSeparator());
+	    
+	    System.out.println(".......Using the for each loop condition......");
+	    for(String ref:watches)
+	    {
+	    	System.out.println(ref);
+	    }
+	    
+	    Iterator<String> watch = watches.iterator();
+	    
+	    System.out.println(System.lineSeparator());
+	    
+	    System.out.println("......Using the while loop condition..........");
+	    while(watch.hasNext())
+	    {
+	    String	ref1=watch.next();
+	    System.out.println(ref1);
+	    }
+	    	
+	  }
 }

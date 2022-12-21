@@ -1,44 +1,43 @@
 package com.xworkz.collection.om;
 
 import java.util.ArrayList;
+
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
 public class MetroCityName {
   
 	public static void main(String args[]) {
 		
-		String name1 ="Banglore";
-		String name2 ="Channai";
-		String name3 ="kerala";
-		String name4 ="Kolkatha";
-		String name5 ="Delhi";
+   Collection<String> names = new LinkedHashSet();
 		
-      Collection<String> collection = new ArrayList<String>();
-      
-      collection.add(name5);
-      collection.add(name2);
-      collection.add(name3);
-      collection.add(name4);
-      collection.add(name1);
-      
-
-		System.out.println(collection.size());
-		System.out.println(collection);
-		System.out.println("Accessing all the element from collection...");
+		names.add("Bangalore");
+		names.add("Hyderabad");
+		names.add("Mumbai");
+		names.add("Delhi");
+		names.add("Kolkata");
 		
-		//for each
+		System.out.println(names);
 		
-		for(String element:collection) {
-			System.out.println(element);
-		}
-		System.out.println("......Iterator......");
+		System.out.println(System.lineSeparator());
 		
-	    Iterator<String> itr = collection.iterator();
-	    while(itr.hasNext())
+		 System.out.println("......Using the for each loop condition.........");
+		for(String ref:names)
 		{
-			String element = itr.next();
-			System.out.println(element);
+			System.out.println(ref);
 		}
+		
+		System.out.println(System.lineSeparator());
+		Iterator<String> name = names.iterator();
+		
+	    System.out.println("......Using the while loop condition.......");
+		while(name.hasNext())
+		{
+			String ref1=name.next();
+			System.out.println(ref1);
+		}
+		
 	}
+
 }
