@@ -3,10 +3,9 @@ package com.xwork.movie.components;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Area {
- 
-	public Area() {
+public class Skill {
 
-    System.out.println("Area Created");
-  }
+	public void Skill() {
+		System.out.println("Develop Skill");
+	}
 }
