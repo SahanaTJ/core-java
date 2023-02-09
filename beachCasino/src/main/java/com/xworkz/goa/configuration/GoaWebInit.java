@@ -4,7 +4,9 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class GoaWebInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer{
+public class GoaWebInit 
+extends AbstractAnnotationConfigDispatcherServletInitializer 
+implements WebMvcConfigurer{
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {

@@ -11,3 +11,5 @@ public class GoaConfiguration {
 		System.out.println("Created" + this.getClass().getSimpleName());
 	}
 }
+
+
