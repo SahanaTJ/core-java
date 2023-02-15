@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 @Configuration
-@ComponentScan("com.xworkz")
+@ComponentScan("com.xworkz.cm")
 public class CMApplicationConfiguration {
 
 	public CMApplicationConfiguration() {

@@ -4,13 +4,11 @@ import java.util.Collections;
 import java.util.Set;
 
 import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
-
-import org.apache.el.util.Validation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.Validator;
 
 import com.xworkz.cm.dto.CMDTO;
 import com.xworkz.cm.repository.CMRepository;
@@ -26,7 +24,7 @@ public class CMServiceImpl implements CMService{
 	@Override
 	public Set<ConstraintViolation<CMDTO>> validateAndSave(CMDTO cmdto) {
 		System.out.println("Validate And Save in CM..."+cmdto);
-		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();//  buildDefaultValidatorFactory();
 		Validator validator = (Validator) factory.getValidator();
 		Set<ConstraintViolation<CMDTO>> constraintViolations = validator.validate(cmdto);
 

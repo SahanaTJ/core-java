@@ -16,7 +16,6 @@ import com.xworkz.cm.service.CMService;
 
 @Controller
 @RequestMapping("/cm")
-
 public class CMController {
 
 	@Autowired
@@ -26,12 +25,16 @@ public class CMController {
 		System.out.println("Created " + this.getClass().getSimpleName());
 	}
 	
-	@PostMapping("cm")
+	@PostMapping()
 	public String onOrder(CMDTO dto, Model model) {
 		System.out.println("Running onCM"+dto);
-		Set<ConstraintViolation<CMDTO>> saved = this.cmService.validateAndSave(dto);
-		System.out.println("Saved : "+saved);
-		return "index.jsp";
+		Set<ConstraintViolation<CMDTO>> constraintViolations = this.cmService.validateAndSave(dto);
+		if(!constraintViolations.isEmpty()) {
+			System.out.println("Validation failed, display error message");
+		}else {
+			System.out.println("Validation success, display error message");
+		}
+		return "CM.jsp";
 	}
 }
 

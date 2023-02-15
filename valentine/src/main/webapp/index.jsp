@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,9 +19,9 @@
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
 				width="400" height="100" />
 				
-			</a> <a href="CM.jsp">CM</a>
+			</a> <a href="valentine">Valentine</a>
 		</div>
 	</nav>
-	
+    <h1>Welcome to Valentine</h1>
 </body>
 </html>
