@@ -4,6 +4,6 @@ import com.xworkz.cm.dto.CMDTO;
 
 public interface CMRepository {
   
-	boolean  save(CMDTO dto);
+	boolean  save(ValentineEntity entity);
 	
 }

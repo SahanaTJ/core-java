@@ -20,9 +20,9 @@ public class ValentineController {
 	@Autowired
 	private ValentineService valentineService;
 	
-	List<String> places =Arrays.asList("Cubbon park","BTM","Lal Bagh","Jp nagara","Rajajinagara","Indira Nagara");
+	private List<String> places =Arrays.asList("Cubbon park","BTM","Lal Bagh","Jp nagara","Rajajinagara","Indira Nagara");
 	
-	List<String> gifts = Arrays.asList("Teddy","Chocolate","I-phone","Saree");
+	private List<String> gifts = Arrays.asList("Teddy","Chocolate","I-phone","Saree");
 	
 	public ValentineController() {
 		System.out.println("Created" + this.getClass().getSimpleName());
@@ -42,10 +42,12 @@ public class ValentineController {
 	public String onValentine(Model model, ValentineDTO dto) {
 		System.out.println("running onValentine Post method" + dto);
 		Set<ConstraintViolation<ValentineDTO>> violations=valentineService.validateAndSave(dto);
+		
 		if(violations.isEmpty()) {
 			System.out.println("no violation is controller go to success page");
 			return "ValentineSuccess";
 		}
+		
 		model.addAttribute("places",places);
 		model.addAttribute("gifts", gifts);
 		model.addAttribute("errors",violations);

@@ -1,7 +1,5 @@
-package com.xworkz.valentine.configuration;
+package com.xworkz.aeroplane.configuration;
 
-import javax.persistence.Basic;
-import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,22 +8,21 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan("com.xworkz.valentine")
-public class ValentineConfiguration {
- 
-	public ValentineConfiguration() {
-		System.out.println("Created" + this.getClass().getSimpleName());
+@ComponentScan("com.xworkz.aeroplane")
+public class AeroplaneConfiguration {
+
+	public AeroplaneConfiguration() {
+  System.out.println("Created" + this.getClass().getSimpleName());
 	}
 	
 	@Bean
 	public ViewResolver viewResolver() {
 		System.out.println("registering custom view resolver,,,");
 		return new InternalResourceViewResolver("/",".jsp");
-	}
-	
-    @Bean
-    public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean() {
+}
+	@Bean
+	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean() {
     	System.out.println("registering LocalContainerEntityManagerFactoryBean");
 		return new LocalContainerEntityManagerFactoryBean();
     }
- }
+}

@@ -1,5 +1,7 @@
 package com.xworkz.valentine.dto;
 
+
+import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -10,6 +12,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ValentineDTO {
 
+	
+	@Id
+	private int id;
+	
 	@Size(min=3,max=20, message = "Name cannot be less than 3 or greater than 10")
 	private String name;
 

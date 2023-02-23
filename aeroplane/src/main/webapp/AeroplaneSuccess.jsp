@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,17 +13,20 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<nav style="background-color: black;">
-		<div class="container-fluid">
+	<nav style="background-color: pink;" class="row">
+		<div class="container-fluid col p-3 my-3 ">
 			<a> <img alt=""
-				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
+				src="https://www.pngitem.com/pimgs/m/697-6973849_airindia-hd-png-download.png"
 				width="400" height="100" />
-			</a> 
-			<a href="index.jsp">Home</a>
-			<a href="Valentine.jsp">valentine</a>
+			</a>
+		</div>
+		<div class="col p-3 my-3">
+			 <a href="aeroplane" style="font-size: x-large;">Aeroplane</a>
+		</div>
+		<div class="col p-3 my-3">
+			<a href="index.jsp" style="font-size: x-large;">Home</a>
 		</div>
 	</nav>
-    <h1>Valentine Success.....</h1>
-
+    <h1>Register Successfully </h1>
 </body>
 </html>
