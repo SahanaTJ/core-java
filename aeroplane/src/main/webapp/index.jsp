@@ -19,7 +19,7 @@
 	<nav style="background-color: pink;" class="row">
 		<div class="container-fluid">
 			<a> <img alt=""
-				src="https://media2.giphy.com/media/cMKiyssfSf1laPo1wK/giphy.gif?cid=ecf05e47yiqc4q77ywriaxday2p1aanzfsay5c1aynp4i4rl&rid=giphy.gif&ct=g"
+				src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fairasia-airplane&psig=AOvVaw0kY8RxHIVBE47Wc88dfGpo&ust=1677577949530000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPioncHstv0CFQAAAAAdAAAAABAJ"
 				width="600" height="400" /></a>
 		</div>
 		</div>
