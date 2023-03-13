@@ -23,35 +23,35 @@
 		</div>
 	</nav>
 	<center>
-		<h1>Welcome to NailPolish data saving</h1>
+		<h1>Welcome to NailPolish data Update</h1>
 		<c:forEach items="${errors}" var="e">
 			<span style="color: red;">${e.message} <br></span>
 		</c:forEach>
-
-		<form action="nailpolish" method="post">
+		<span style="color: green;">${message}</span>
+		<form action="update" method="post">
 			<pre> <h3>
+	Id : <input type="number" name="id" value="${dto.id}"
+						readonly="readonly" />		
     Name : <input type="text" name="name" value="${dto.name}" />
     BrandName : <input type="text" name="brandName"
-						value="${dto.brandName}" />
+						value="${dto.brandName}" readonly="readonly" />
     Color : <select name="color">
-                  <option value="">SELECT</option>
+                  <option value="${dto.color}">${dto.color}</option>
     				<c:forEach items="${color}" var="col">
     				<option value="${col}">${col}</option>
     				</c:forEach>
 			</select>
-    Price : <input type="number" name="price" />
-    Qualiity : <select name="quality">
-              <option value="">SELECT</option>
+    Price : <input type="number" name="price" value="${dto.price}" />
+    Qulaity : <select name="quality">
+              <option value="${dto.quality}">${dto.quality}</option>
                  <c:forEach items="${quality}" var="q">
                  	<option value="${q}">${q}</option>
                  </c:forEach> 
-                 
-    </select>
+     			</select>
+     <input type="submit" value="Update" class="btn btn-primary"/>
     </h3>
-     <input type="submit" value="Perchase" />
-    
-      
 		</pre>
+		</form>
 	</center>
 	</form>
 </body>

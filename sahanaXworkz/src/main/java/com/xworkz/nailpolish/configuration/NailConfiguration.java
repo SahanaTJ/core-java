@@ -15,15 +15,15 @@ public class NailConfiguration {
 		  System.out.println("Created" + this.getClass().getSimpleName());
 			}
 			
-			@Bean
+			@Bean 
 			public ViewResolver viewResolver() {
 				System.out.println("registering custom view resolver,,,");
-				return new InternalResourceViewResolver("/",".jsp");
+				return new InternalResourceViewResolver("/",".jsp");//used to resolve the provided uri to actual uri
 		}
 			@Bean
 			public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean() {
 		    	System.out.println("registering LocalContainerEntityManagerFactoryBean");
 				return new LocalContainerEntityManagerFactoryBean();
-		    }
+   }
 }
 

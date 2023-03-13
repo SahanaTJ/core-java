@@ -33,6 +33,12 @@
 		<div class="col p-3 my-3">
 			<a href="BrandNameSearch.jsp" style="font-size: x-large;">BrandName Search</a>
 		</div>
+		<div class="col p-3 my-3">
+			<a href="list" style="font-size: x-large;">AllList</a>
+		</div>
+		<div class="col p-3 my-3">
+			<a href="FindNameAndColor.jsp" style="font-size: x-large;">Find Name And Color</a>
+		</div>
 	</nav>
 </center>
 </pre> 

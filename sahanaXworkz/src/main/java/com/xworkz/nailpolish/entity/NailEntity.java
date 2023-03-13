@@ -15,7 +15,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name ="nailpolish")
 @Entity
-@NamedQuery(name ="findByBrandName",query = "select ent from NailEntity ent where ent.brandname=:bname")
+@NamedQuery(name ="findByBrandName",query = "select ent from NailEntity ent where ent.brandName=:bname")
+@NamedQuery(name ="findByName",query = "select ent from NailEntity ent where ent.name=:byname")
+@NamedQuery(name ="findByColor",query = "select ent from NailEntity ent where ent.color=:bycolor")
+@NamedQuery(name ="list" ,query = "select ent from NailEntity ent")
+@NamedQuery(name ="findNameAndColor" , query = "select ent from NailEntity ent where ent.name=:name and ent.color=:color")
 public class NailEntity {
 
 	@Id
@@ -23,11 +27,11 @@ public class NailEntity {
 	@Column(name = "n_id")
 	private int id;
 
-	@Column(name = "n_name")
-	private String Name;
-
 	@Column(name = "n_brand_name")
-	private String brandname;
+	private String brandName;
+
+	@Column(name = "n_name")
+	private String name;
 
 	@Column(name = "n_color")
 	private String color;

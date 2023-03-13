@@ -19,7 +19,7 @@
 	<nav style="background-color: pink;" class="row">
 		<div class="container-fluid">
 			<a> <img alt=""
-				src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fairasia-airplane&psig=AOvVaw0kY8RxHIVBE47Wc88dfGpo&ust=1677577949530000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPioncHstv0CFQAAAAAdAAAAABAJ"
+				src="https://tenor.com/en-GB/view/indian-air-force-aircraft-formation-gif-17949771"
 				width="600" height="400" /></a>
 		</div>
 		</div>

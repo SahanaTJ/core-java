@@ -4,7 +4,9 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class NailInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer{
+public class NailInit 
+extends AbstractAnnotationConfigDispatcherServletInitializer //register  
+implements WebMvcConfigurer {
 
 	public NailInit() {
 		System.out.println("Created" + this.getClass().getSimpleName());
@@ -25,12 +27,12 @@ public class NailInit extends AbstractAnnotationConfigDispatcherServletInitializ
 	@Override
 	protected String[] getServletMappings() {
 		System.out.println("getServletMappings");
-		return new String[] {"/"};
+		return new String[] {"/"}; 
 	}
  
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		System.out.println("configureDefaultServletHandling");
-		configurer.enable();
-	}
+		configurer.enable(); //we enable this to handle the static sources
+	}          //static = .jsp,html,css
 }

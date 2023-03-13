@@ -36,9 +36,6 @@
    </nav>
    
    <h1>WELCOME TO BRAND NAME SEARCH PAGE</h1>
-   <h3>
-   <span style="color: red">${message}</span>
-   </h3>
    <form action="searchByBrandName" method="get">
    <h3><span style="color: red;">${message}</span></h3>
        Search By BrandName: <input type="text" name="brandName" />
@@ -53,6 +50,8 @@
              <th>Color</th>
              <th>Price</th>
              <th>Quality</th>
+             <th>Update</th>
+             <th>Delete</th>
         </tr>  
         <c:forEach items="${list}" var="t">
         <tr>
@@ -62,6 +61,8 @@
            <td>${t.color}</td>
            <td>${t.price}</td>
            <td>${t.quality}</td>
+           <td><a href="update?id=${t.id}">Edit</a></td>
+           <td><a href="delete?id=${t.id}">Delete</a></td>
         </tr>
        </c:forEach>
          </table>
