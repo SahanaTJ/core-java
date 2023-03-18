@@ -27,10 +27,6 @@ public class JDBCRunner {
 			System.err.println("SQLException connecting to DB, either URl,UN or PWD is wrong");
 			e.printStackTrace();
 		}
-	 try {
-		
-	} catch (ClassNotFoundException e) {
-	  e.printStackTrace();
 	}
-}
+	
 }

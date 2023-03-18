@@ -15,7 +15,10 @@ import com.xworkz.nailpolish.dto.NailDTO;
 import com.xworkz.nailpolish.entity.NailEntity;
 import com.xworkz.nailpolish.repository.NailRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class NailServiceImpl implements NailService {
 
 	@Autowired

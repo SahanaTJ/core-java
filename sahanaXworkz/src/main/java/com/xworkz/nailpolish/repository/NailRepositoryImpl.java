@@ -11,14 +11,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.xworkz.nailpolish.entity.NailEntity;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Repository
+@Slf4j
 public class NailRepositoryImpl implements NailRepository {
 
 	@Autowired
 	private EntityManagerFactory EntityManagerFactory;
 
 	public NailRepositoryImpl() {
-		System.out.println("Created" + this.getClass().getSimpleName());
+	log.info("Created" + this.getClass().getSimpleName());
 	}
 
 	@Override

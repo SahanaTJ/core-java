@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.xworkz.nailpolish.dto.NailDTO;
 import com.xworkz.nailpolish.service.NailService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
 @RequestMapping("/")
-
+@Slf4j
 public class NailController {
 
 	@Autowired
@@ -32,7 +34,7 @@ public class NailController {
 	@GetMapping("/nailpolish") // used to handle gettype of request method
 	public String onNail(Model model) {
 		System.out.println("running onNailpolish Get Method");
-
+		log.info("running onNailpolish Get Method - vinay");
 		model.addAttribute("color", color);
 		model.addAttribute("quality", quality);
 

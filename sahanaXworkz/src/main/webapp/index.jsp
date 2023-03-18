@@ -39,6 +39,12 @@
 		<div class="col p-3 my-3">
 			<a href="FindNameAndColor.jsp" style="font-size: x-large;">Find Name And Color</a>
 		</div>
+		<div class="col p-3 my-3">
+			<a href="UploadImage.jsp" style="font-size: x-large;">Upload an Image</a>
+		</div>
+		<div class="col p-3 my-3">
+			<a href="DisplayImage.jsp" style="font-size: x-large;">Display Image</a>
+		</div>
 	</nav>
 </center>
 </pre> 

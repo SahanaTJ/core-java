@@ -13,7 +13,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<nav style="background-color: pink;">
+	<nav style="background-color: green;">
 		<div class="container-fluid">
 			<a> <img alt=""
 				src="https://www.shutterstock.com/image-photo/bottles-nail-polish-on-colorful-260nw-380869621.jpg"
